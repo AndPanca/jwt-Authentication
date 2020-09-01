@@ -17,7 +17,7 @@ console.log("kode token: " + token);
 // Kode token yg didapat dimasukan ke token1
 const token1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJuYW1lIjoicGFuY2FQdXJuYW1hIn0sImlhdCI6MTU5ODk2NzEzNywiZXhwIjoxNTk4OTcwNzM3fQ.H2kYvprbxcd9d6ym2-49o_FNDiF_DtL8ZbJaCtEO0ig';
 
-// Cara verifikasi token type 1
+// Verifikasi token type 1
 // jwt.verify(token1, JWT_SECRET, (err, decode) => {
 //   if (err) {
 //     console.log(err.message);
@@ -26,7 +26,7 @@ const token1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJuYW1lIjo
 //   console.log(decode);
 // });
 
-// Cara verifikasi token type 2
+// Verifikasi token type 2
 try {
   const decode = jwt.verify(token1, JWT_SECRET);
   console.log(decode);
