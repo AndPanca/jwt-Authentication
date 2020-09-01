@@ -9,12 +9,12 @@ const token = jwt.sign(
 );
 console.log("kode token: " + token);
 
-// Buat basic token type 1 ( Asyncronus )
+// Buat basic token type 2 ( Asyncronus )
 // jwt.sign({ data: { username: 'pancaPurnama' } }, JWT_SECRET, { expiresIn: '1m' }, (err, token) => {
 //   console.log("kode token: "+token);
 // });
 
-// Kode token yg didapat dimasukan ke token1
+// Kode token yg didapat dicopy ke token1
 const token1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVzZXJuYW1lIjoicGFuY2FQdXJuYW1hIn0sImlhdCI6MTU5ODk2NzEzNywiZXhwIjoxNTk4OTcwNzM3fQ.H2kYvprbxcd9d6ym2-49o_FNDiF_DtL8ZbJaCtEO0ig';
 
 // Verifikasi token type 1
